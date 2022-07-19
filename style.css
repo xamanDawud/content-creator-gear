@@ -1,21 +1,22 @@
-/* google poppins Fotns */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
 .container {
   width: 1200px;
-  border: 1px solid black;
-  margin: 0 auto;
+  margin: 0px auto;
 }
-
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
+  margin-top: 87px;
 }
-
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -23,59 +24,130 @@ nav {
 }
 .nav-menu a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 34px;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.73);
 }
 .nav-menu a img {
   width: 70%;
 }
 img.nav-search-icon {
 }
-
 img.nav-search-icon {
   margin-top: 13px;
   margin-right: -1px;
 }
-
 img.nav-cart-icon {
   margin-top: 10px;
   margin-left: -5px;
 }
-
-/* ---------------------------
-Carousal Section Style Start
------------------------------------- */
 section.carousel {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   align-items: center;
 }
-
 .carousel-content h1 {
   font-size: 52px;
   margin-top: 6px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
-
 .carousel-content p {
   font-size: 16px;
   width: 79%;
-  margin-top: 0px;
+  margin-bottom: 16px;
 }
-
 button.prebook-btn {
-  background: #e02c6d;
+  background: rgb(224, 44, 109);
   width: 196px;
   border-radius: 41px;
-  padding: 10px 24px 10px 24px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   border: none;
 }
-
 .carousel-img img {
   margin-top: 80px;
+  margin-left: 79px;
+}
+.commerce-market {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-evenly;
+  padding: 18px 93px;
+}
+hr {
+  width: 1113px;
+}
+hr.top {
+  margin-top: 100px;
+}
+.all-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0px 60px;
+}
+h1.popular-title {
+  text-align: center;
+  margin-top: 100px;
+}
+.collection {
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
+  border-radius: 5px;
+  padding: 21px;
+  margin: 0px auto;
+}
+.collection h1 {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+.collection h2 {
+  margin: 0px 0px 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.collection span {
+}
+.collection p {
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+.fetures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 174px;
+  padding: 0px 57px;
+}
+.feature-content {
+  margin-left: -33px;
+  margin-top: 18px;
+}
+.feature-content h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.feature-content p {
+  margin-bottom: 25px;
+}
+button#features-btn {
+  border-radius: 0px;
+  width: 156px;
+  padding: 16px 40px;
+}
+footer {
+  background-color: rgb(10, 8, 38);
+  padding: 72px 19px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.41);
 }
